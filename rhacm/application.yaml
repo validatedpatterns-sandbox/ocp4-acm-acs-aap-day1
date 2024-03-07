@@ -2,7 +2,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: grafana-adoption-profiling
+  name: ocp4-rhacm
   namespace: openshift-gitops
 spec:
   destination:
