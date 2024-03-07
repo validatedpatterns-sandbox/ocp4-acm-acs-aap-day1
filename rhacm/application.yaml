@@ -10,7 +10,7 @@ spec:
     namespace: ''
     server: 'https://kubernetes.default.svc'
   source:
-    path: .
+    path: "rhacm/"
     repoURL: 'https://github.com/lpanza/ocp4-acm-acs-aap-day1.git'
     targetRevision: HEAD
   sources: []
