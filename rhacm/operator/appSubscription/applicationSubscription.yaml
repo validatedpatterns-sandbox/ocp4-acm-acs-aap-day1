@@ -3,7 +3,7 @@ apiVersion: app.k8s.io/v1beta1
 kind: Application
 metadata:
   name: rhacm-policies
-  namespace: open-cluster-management
+  namespace: default
 spec:
   componentKinds:
   - group: apps.open-cluster-management.io
@@ -42,7 +42,7 @@ metadata:
   labels:
     app: rhacm-policies
   name: rhacm-policies-subscription-1
-  namespace: open-cluster-management
+  namespace: default
 spec:
   channel: ggithubcom-lpanza-ocp4-acm-acs-aap-day1-ns/ggithubcom-lpanza-ocp4-acm-acs-aap-day1
   placement:
@@ -56,7 +56,7 @@ metadata:
   labels:
     app: rhacm-policies
   name: rhacm-policies-placement-1
-  namespace: open-cluster-management
+  namespace: default
 spec:
   predicates:
     - requiredClusterSelector:
@@ -72,7 +72,7 @@ spec:
 apiVersion: cluster.open-cluster-management.io/v1beta2
 kind: ManagedClusterSetBinding
 metadata:
-  namespace: open-cluster-management
+  namespace: default
   name: default
 spec:
   clusterSet: default
