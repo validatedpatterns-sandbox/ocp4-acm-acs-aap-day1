@@ -64,15 +64,16 @@ spec:
             - key: 'local-cluster'
               operator: 'In'
               values: 
-              - true
+                - 'true'
   clusterSets:
+    - global
     - default
 ---
 apiVersion: cluster.open-cluster-management.io/v1beta2
 kind: ManagedClusterSetBinding
 metadata:
   namespace: default
-  name: default
+  name: global
 spec:
-  clusterSet: default
+  clusterSet: global
 
