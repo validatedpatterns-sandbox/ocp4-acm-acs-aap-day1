@@ -8,3 +8,4 @@ resources:
 - operatorGroup.yaml
 - subscription.yaml
 - mch.yaml
+- subscriptionAdminCRB.yaml
