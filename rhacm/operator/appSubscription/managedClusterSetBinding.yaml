@@ -4,5 +4,7 @@ kind: ManagedClusterSetBinding
 metadata:
   namespace: default
   name: global
+  annotations:
+    argocd.argoproj.io/sync-wave: "100"
 spec:
   clusterSet: global

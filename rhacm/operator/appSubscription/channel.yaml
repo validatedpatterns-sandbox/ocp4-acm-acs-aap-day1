@@ -4,6 +4,7 @@ kind: Channel
 metadata:
   annotations:
     apps.open-cluster-management.io/reconcile-rate: medium
+    argocd.argoproj.io/sync-wave: "100"
   name: ggithubcom-lpanza-ocp4-acm-acs-aap-day1
   namespace: ggithubcom-lpanza-ocp4-acm-acs-aap-day1-ns
 spec:

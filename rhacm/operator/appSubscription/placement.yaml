@@ -6,6 +6,8 @@ metadata:
     app: rhacm-policies
   name: rhacm-policies-placement-1
   namespace: default
+  annotations:
+    argocd.argoproj.io/sync-wave: "100"
 spec:
   predicates:
     - requiredClusterSelector:
