@@ -1,0 +1,18 @@
+---
+apiVersion: policy.open-cluster-management.io/v1
+kind: PolicyGenerator
+metadata:
+  name: policy-generator-rhacs-local-secured-cluster
+policyDefaults:
+  namespace: policies
+  namespaceSelector:
+    include:
+    - rhacs-operator
+  placement:
+    clusterSelectors:
+      local-cluster: "true"
+  remediationAction: enforce
+policies:
+  - name: rhacs-local-secured-cluster-install
+    manifests:
+      - path: securedCluster.yaml
