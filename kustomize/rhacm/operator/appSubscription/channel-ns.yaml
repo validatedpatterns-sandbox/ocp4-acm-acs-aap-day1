@@ -1,7 +1,0 @@
----
-apiVersion: v1
-kind: Namespace
-metadata:
-  name: ggithubcom-lpanza-ocp4-acm-acs-aap-day1-ns
-  annotations:
-    argocd.argoproj.io/sync-wave: "100"
